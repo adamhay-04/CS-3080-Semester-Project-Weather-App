@@ -10,7 +10,7 @@ class WeatherApp:
 
     def __init__(self):
         self.mainwindow = tk.Tk()
-        self.mainwindow.title("CS 3080 Open Weather API - City Weather App")  # give the application a title label
+        self.mainwindow.title("CS 3080 Open Weather API - City Weather App")  
         self.mainwindow.geometry("856x482")
 
         load_dotenv()
@@ -59,30 +59,28 @@ class WeatherApp:
 
     def create_elements(self):
 
-        userframe = tk.Frame(self.mainwindow)  # frame allows for the usage of the expand feature, which will allow all on screen
-        userframe.pack(expand=True)  # widgets to move and adjust to changes in window size while remaining grouped together
-
+        userframe = tk.Frame(self.mainwindow) 
+        userframe.pack(expand=True)  
+        
         title_label = tk.Label(userframe, text="OpenWeather API City Weather App")
         title_label.pack()
 
         input_label = tk.Label(userframe, text="Enter a City to display current weather:")
         input_label.pack()
 
-        self.input_field = tk.Entry(userframe)  # add input box to frame
+        self.input_field = tk.Entry(userframe) 
         self.input_field.pack(pady=5)
 
-        submit = tk.Button(userframe, text="Enter", command=self.submit_and_process)  # add button to frame
+        submit = tk.Button(userframe, text="Enter", command=self.submit_and_process) 
         submit.pack(pady=5)
 
-        self.temp_unit = tk.StringVar(value="imperial")  # default value is imperial
+        self.temp_unit = tk.StringVar(value="imperial")  
         temp_set_label = tk.Label(userframe, text="Select Units")
         temp_set_label.pack()
 
-        # radio buttons to act settings for unit preference
         tk.Radiobutton(userframe, text="Imperial (F)", variable=self.temp_unit, value="imperial").pack()
         tk.Radiobutton(userframe, text="Metric (C)", variable=self.temp_unit, value="metric").pack()
 
-        # create and print results to mainwindow frame
         self.result_label = tk.Label(userframe, text="", justify="left")
         self.result_label.pack(pady=15)
 
