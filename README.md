@@ -1,7 +1,7 @@
 # CS-3080-Semester-Project-Weather-App
 This repository holds the code for a simple weather app for the CS 3080 Semester Project
 
-======================================== API KEY INFORMATION ========================================
+==================== API KEY INFORMATION =================== 
 
 The application uses the OpenWeather API and requires a valid API key from OpenWeather to function.
 To fullfil this requirement, visit https://openweathermap.org/api to sign up for a free account and
@@ -11,7 +11,7 @@ To add the API key, go to the .env file in main and add it to the "API_KEY=" fie
 The program will return an "Invalid API key" error issued by OpenWeather upon request for the 
 data.
 
-====================================== ENVIRONMENT INFORMATION ======================================
+================= ENVIRONMENT INFORMATION ===================
 
 The .yml file included in the main branch holds all the required libraries and environment data to 
 run the program, to install the environment access the anaconda prompt, navigate to the directory
@@ -21,7 +21,7 @@ conda env create -f WeatherAppEnv.yml
 
 Once the environment is installed and activated, the program can be run from the conda command line
 
-====================================== APPLICATION FUNCTION =========================================
+==================== APPLICATION FUNCTION ===================
 
 This application has one main function: Access weather info through OpenWeatherMap API and display 
 current conditions, current tempurature, and high/low temps. User can choose between imperial and
