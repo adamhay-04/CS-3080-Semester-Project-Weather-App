@@ -1,7 +1,7 @@
 # CS-3080-Semester-Project-Weather-App
 This repository holds the code for a simple weather app for the CS 3080 Semester Project
 
-==================== API KEY INFORMATION =================== 
+===================== API KEY INFORMATION ==================== 
 
 The application uses the OpenWeather API and requires a valid API key from OpenWeather to function.
 To fullfil this requirement, visit https://openweathermap.org/api to sign up for a free account and
