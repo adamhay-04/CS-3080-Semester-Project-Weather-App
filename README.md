@@ -9,7 +9,8 @@ acquire a valid API key.
 
 To add the API key, go to the .env file in main and add it to the "API_KEY=" field to add the key.
 The program will return an "Invalid API key" error issued by OpenWeather upon request for the 
-data.
+data if the key is invalid or not found. In order for the API key to be loaded correctly with
+dotenv, it is best to put the .env file in the same location as the main program file
 
 ================= ENVIRONMENT INFORMATION ===================
 
