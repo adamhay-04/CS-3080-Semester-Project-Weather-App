@@ -16,7 +16,7 @@ dotenv, it is best to put the .env file in the same location as the main program
 
 The .yml file included in the main branch holds all the required libraries and environment data to 
 run the program, to install the environment access the anaconda prompt, navigate to the directory
-where the environemt file is installed and enter the followingcommand:
+where the environment file is installed and enter the following command:
 
 conda env create -f WeatherAppEnv.yml
 
