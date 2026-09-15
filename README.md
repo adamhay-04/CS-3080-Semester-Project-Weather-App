@@ -14,7 +14,7 @@ dotenv, it is best to put the .env file in the same location as the main program
 
 ================= ENVIRONMENT INFORMATION ===================
 
-The .yml file included in the main branch holds all the required libraries and environment data to 
+The .yml file included in the main branch holds all the required libraries and conda environment data to 
 run the program, to install the environment access the anaconda prompt, navigate to the directory
 where the environment file is installed and enter the following command:
 
